@@ -1,0 +1,152 @@
+/* Fundalul paginii cu imaginea complet vizibilă */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.travelmediagroup.com/wp-content/uploads/2023/04/bigstock-Customers-Positive-Review-And-473798617-scaled.jpg');
+    background-position: center center; /* Centrează imaginea pe pagină */
+    background-attachment: fixed; /* Fixează imaginea pentru a nu se mișca la scroll */
+    background-size: cover; /* Asigură că imaginea acoperă întreaga pagină */
+    height: 100vh; /* Setează înălțimea la 100% din înălțimea vizibilă a ecranului */
+    overflow: hidden;
+}
+
+/* Navbar personalizat pentru fundal închis */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important; /* Asigurăm că textele din navbar sunt albe */
+}
+
+/* Mărește contrastul pentru hover pe link-urile navbar */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #6c757d;
+    border-radius: 5px;
+}
+
+/* Containerul tabelului */
+.container {
+    margin-top: 20px;
+    padding: 10px;
+    z-index: 1; /* Asigurăm că este deasupra imaginii de fundal */
+}
+
+/* Tabelul stilizat cu fundal alb semi-transparent */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Asigură că marginile tabelului sunt fuzionate */
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Fundal alb transparent (aici am setat opacitatea la 70%) */
+    border: 2px solid black; /* Bordură groasă neagră pentru tabel */
+}
+
+/* Marginile tabelului și ale celulelor */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid black; /* Bordură groasă neagră pentru celule */
+    background-color: transparent; /* Fundal transparent pentru celule */
+    color: black; /* Schimbă culoarea textului la negru */
+}
+
+/* Stil pentru antetul tabelului */
+th {
+    background-color: #cce7ff;
+    color: black; /* Schimbă culoarea textului antetului la negru */
+    font-weight: bold; /* Text bold în antet */
+}
+
+/* Stil pentru fiecare rând din tabel */
+tbody tr {
+    background-color: transparent;
+    transition: background-color 0.3s ease, filter 0.3s ease; /* Tranziție lină pentru hover */
+}
+
+/* Efecte de hover pe fiecare rând */
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Luminare albă la hover */
+    filter: brightness(1.2); /* Luminează rândul la hover */
+}
+
+/* Stilul pentru butoane */
+td .btn {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Efect de hover pentru butoane */
+td .btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.7); /* Fundal alb pal pentru butoane la hover */
+    color: black; /* Textul să fie negru */
+}
+
+/* Poziționarea titlului paginii în dreapta sus */
+h1 {
+    text-align: right;
+    color: black;
+    font-size: 2rem;
+    margin: 20px 20px 20px 0;
+    font-weight: bold; /* Text bold pentru titlu */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.btn-fancy {
+    padding: 10px 20px; /* Mărirea padding-ului pentru a face butonul mai vizibil */
+    font-size: 1rem; /* Mărirea fontului pentru un text mai clar */
+    border-radius: 50px; /* Colțuri rotunjite pentru un aspect modern */
+    background-color: #007bff; /* Culoare de fundal albastră */
+    color: white; /* Text alb pentru contrast */
+    border: 2px solid transparent; /* Fără margini vizibile, doar umbra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adăugăm o umbră discretă */
+    text-transform: uppercase; /* Transformă textul în majuscule pentru un efect mai pronunțat */
+    letter-spacing: 1px; /* Distanțierea literelor pentru un aspect mai aerisit */
+    transition: all 0.3s ease; /* Tranziție lină pentru hover */
+}
+
+/* Efect de hover pentru buton */
+.btn-fancy:hover {
+    background-color: #0056b3; /* Culoare mai închisă la hover */
+    border: 2px solid #0056b3; /* Bordură albastră la hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Umbra devine mai evidentă la hover */
+    transform: translateY(-3px); /* Butonul se ridică ușor când este apăsat */
+}
+
+/* Efect de focus pentru accesibilitate */
+.btn-fancy:focus {
+    outline: none; /* Eliminăm conturul implicit */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Adăugăm un contur albastru pe fundal la focus */
+}
+
+
+
+.navbar {
+    background-color: #ddd9da; /* Fundal navbar */
+    padding: 10px; /* Spațiu interior */ 
+    flex-wrap: nowrap; /* Previne împachetarea pe linii multiple */
+    justify-content: flex-start; /* Elemente aliniate la stânga */
+    gap: 20px; /* Spațiu între dreptunghiuri */
+}
+
+.navbar .nav-link {
+    color: white; /* Text alb */
+    background-color: #007BFF; /* Fundal albastru */
+    border: none; /* Fără margini */
+    border-radius: 5px; /* Colțuri rotunjite */
+    padding: 10px 20px; /* Dimensiune interioară generoasă */
+    text-decoration: none; /* Elimină sublinierea */
+    font-size: 16px; /* Dimensiune text */
+    text-align: center; /* Text centrat */
+    transition: background-color 0.3s ease; /* Animație hover */
+    display: inline-block; /* Asigură dimensiunea corectă a dreptunghiului */
+}
+
+.navbar .nav-link:hover {
+    background-color: #0056b3; /* Fundal albastru mai închis pe hover */
+}

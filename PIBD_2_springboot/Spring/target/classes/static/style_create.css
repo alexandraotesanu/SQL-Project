@@ -1,0 +1,113 @@
+/* Stiluri pentru fundalul paginii */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundal negru pentru întreaga pagină */
+    color: #fff; /* Textul din pagină va fi alb pentru a se vedea pe fundalul negru */
+}
+
+/* Stiluri pentru cardul principal */
+.card {
+    background-color: white; /* Fundal alb pentru card */
+    border-radius: 15px; /* Colțuri rotunjite pentru card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Umbra discretă */
+    padding: 20px;
+    max-width: 500px; /* Cardul mai îngust */
+    margin: 0 auto; /* Centrat pe pagină */
+}
+
+/* Titlul */
+h1 {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Stiluri pentru etichetele de input */
+label {
+    color: #333; /* Culoare text pentru etichete */
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block; /* Face etichetele să fie pe linii separate */
+}
+
+/* Câmpurile de input cu ovale și hover */
+form {
+    display: flex;
+    flex-direction: column; /* Aliniem câmpurile de input pe o singură coloană */
+    gap: 20px; /* Spațiu între câmpuri */
+}
+
+input[type="text"] {
+    width: 100%; /* Lățimea câmpului de input să fie de 100% */
+    padding: 8px 15px; /* Reducem padding-ul pentru a face ovalul mai scurt */
+    border-radius: 30px; /* Colțuri rotunjite pentru a forma ovale */
+    border: 2px solid #ff80ff; /* Bordura roz la început */
+    background-color: #f3daee; /* Fundal roz pal pentru input */
+    font-size: 1rem; /* Mărimea fontului */
+    color: #333; /* Culoarea textului */
+    transition: all 0.3s ease; /* Tranziție lină pentru efectul de hover */
+}
+
+/* Efect de hover pentru inputurile de tip text */
+input[type="text"]:hover {
+    border: 2px solid #0056b3; /* Schimbăm culoarea bordurii la hover */
+    background-color: #ffffff; /* Luminăm fundalul la hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3); /* Adăugăm o umbră albastră la hover */
+}
+
+/* Efect de focus pentru inputuri (când sunt selectate) */
+input[type="text"]:focus {
+    outline: none; /* Eliminăm conturul implicit */
+    border: 2px solid #ff80ff; /* Bordură roz mai intensă la focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Umbra albastră mai intensă la focus */
+    background-color: #cce7ff; /* Fundal mai luminos la focus */
+}
+
+/* Stil pentru butonul de submit */
+.btn {
+    padding: 12px 20px;
+    background-color: #ffbdff;
+    color: black;
+    border-radius: 30px; /* Colțuri rotunjite pentru buton */
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efect de hover pentru buton */
+.btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px); /* Ridicăm butonul când este hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adăugăm o umbră subtilă la hover */
+}
+
+
+.navbar {
+    background-color: #ffc8ff; /* Fundal navbar */
+    padding: 10px; /* Spațiu interior */ 
+    flex-wrap: nowrap; /* Previne împachetarea pe linii multiple */
+    justify-content: flex-start; /* Elemente aliniate la stânga */
+    gap: 20px; /* Spațiu între dreptunghiuri */
+}
+
+.navbar .nav-link {
+    color: white; /* Text alb */
+    background-color: #ff95ff; /* Fundal albastru */
+    border: none; /* Fără margini */
+    border-radius: 5px; /* Colțuri rotunjite */
+    padding: 10px 20px; /* Dimensiune interioară generoasă */
+    text-decoration: none; /* Elimină sublinierea */
+    font-size: 16px; /* Dimensiune text */
+    text-align: center; /* Text centrat */
+    transition: background-color 0.3s ease; /* Animație hover */
+    display: inline-block; /* Asigură dimensiunea corectă a dreptunghiului */
+}
+
+.navbar .nav-link:hover {
+    background-color: #0056b3; /* Fundal albastru mai închis pe hover */
+}

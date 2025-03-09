@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback</title>
+<link rel="stylesheet" href="/style_create.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<!-- Brand -->
+<a class="navbar-brand" href="#">Feedback</a>
+<!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Navbar links -->
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" th:href="@{/centralizari}">Centralizari</a></li>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+<h1 class="text-center">Modifica centralizare</h1>
+<div class="card-body">
+<form th:action="@{/centralizari/{id}(id=${centralizare.id})}"
+th:object="${centralizare}" method="POST">
+<div class="form-group">
+<label> Angajat </label>
+<div>
+<select th:field="*{angajat}" required>
+<th:block th:each="a : ${totiangajatii}">
+<option th:text="${a.nume}" th:value="${a.idAngajat}" />
+</th:block>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label> Review </label>
+<div>
+<select th:field="*{review}" required>
+<th:block th:each="r : ${toatereviewurile}">
+<option th:text="${r.titlu}" th:value="${r.idReview}" />
+</th:block>
+</select>
+</div>
+</div>
+<div class="box-footer">
+<button type="submit" class="btn btn-primary">Apasă</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback</title>
+<link rel="stylesheet" href="/style_create.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<!-- Brand -->
+<a class="navbar-brand" href="#">Feedback</a>
+<!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Navbar links -->
+<div class="collapse navbar-collapse"
+id="collapsibleNavbar">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link"
+th:href="@{/angajati}">Angajati</a>
+</li>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+<h1 class="text-center">Creaza un nou angajat</h1>
+<div class="card-body">
+<form th:action="@{/angajati}" th:object="${angajat}" method="POST">
+<div class="form-group">
+<label> Nume </label>
+<input type="text" name="nume" th:field="*{nume}" class="form-control" placeholder="Introduceti numele" />
+</div>
+<div class="form-group">
+<label> Prenume </label>
+<input type="text" name="prenume" th:field="*{prenume}" class="form-control" placeholder="Introduceti prenumele" />
+</div>
+<div class="form-group">
+<label> Adresa </label>
+<input type="text" name="adresa" th:field="*{adresa}" class="form-control" placeholder="Introduceti adresa" />
+</div>
+<div class="form-group">
+<label> CNP </label>
+<input type="text" name="cnp" th:field="*{cnp}" class="form-control" placeholder="Introduceti CNP-ul" />
+</div>
+<div class="form-group">
+<label> Pozitie </label>
+<input type="text" name="pozitie" th:field="*{pozitie}" class="form-control" placeholder="Introduceti pozitia" />
+</div>
+<div class="form-group">
+<label> Departament </label>
+<input type="text" name="departament" th:field="*{departament}" class="form-control" placeholder="Introduceti departamentul" />
+</div>
+<div class="box-footer">
+<button type="submit" class="btn btn-primary">Apasa</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

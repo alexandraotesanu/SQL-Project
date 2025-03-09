@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback</title>
+<link rel="stylesheet" href="/style_create.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<!-- Brand -->
+<a class="navbar-brand" href="#">Feedback</a>
+<!-- Toggler/collapsibe Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Navbar links -->
+<div class="collapse navbar-collapse"
+id="collapsibleNavbar">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link"
+th:href="@{/angajati}">Angajati</a>
+</li>
+<li class="nav-item"><a class="nav-link"
+th:href="@{/centralizari}">Centralizare</a></li>
+<li class="nav-item"><a class="nav-link"
+th:href="@{/reviewuri}">Reviewuri</a>
+</li>
+</ul>
+</div>
+</nav>
+<br>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+<h1 class="text-center">Creaza un nou review</h1>
+<div class="card-body">
+<form th:action="@{/reviewuri}" th:object="${review}" method="POST">
+<div class="form-group">
+<label> Nume reclamant </label>
+<input type="text" name="numeReclamant" th:field="*{numeReclamant}" class="form-control" placeholder="Introduceti numele reclamantului" />
+</div>
+<div class="form-group">
+<label> Prenume reclamant </label>
+<input type="text" name="prenumeReclamant" th:field="*{prenumeReclamant}" class="form-control" placeholder="Introduceti prenumele reclamantului" />
+</div>
+<div class="form-group">
+<label> Titlu review </label>
+<input type="text" name="titlu" th:field="*{titlu}" class="form-control" placeholder="Introduceti titlul review-ului" />
+</div>
+<div class="form-group">
+<label> Detalii review </label>
+<textarea name="detalii" th:field="*{detalii}" class="form-control" placeholder="Introduceti detaliile review-ului"></textarea>
+</div>
+<div class="form-group">
+<label> Data review </label>
+<input type="datetime-local" name="dataReview" th:field="*{dataReview}" class="form-control" />
+</div>
+<div class="box-footer">
+<button type="submit" class="btn btn-primary">Apasa</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
