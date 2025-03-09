@@ -1,0 +1,137 @@
+/* Stilizare pentru body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4e1f0;  /* Fundal mov palid pentru întreaga pagină */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stilizare pentru header */
+h1 {
+    background-color: #ff9b9b; /* Fundal roz deschis pentru titlu */
+    color: #35424a;            /* Culoare text (gri închis) */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    border-radius: 10px;       /* Colțuri rotunjite */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Umbră subtilă */
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+    text-transform: uppercase; /* Textul în litere mari */
+}
+
+/* Stilizare pentru formular */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundal alb semitransparent */
+    max-width: 800px;  /* Creștem lățimea formularului pentru a face loc unui tabel mai mare */
+    margin: 30px auto;         /* Centrarea formularului */
+    padding: 20px;
+    border-radius: 15px;       /* Colțuri rotunjite */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Umbra formularului */
+}
+
+/* Stilizare pentru tabel */
+table {
+    width: 100%;  /* Tabelul ocupă întreaga lățime a containerului */
+    margin-top: 20px;
+    border-spacing: 15px; /* Spațiu între celule */
+    text-align: left;
+    opacity: 0.8; /* Opacitate pentru transparență */
+}
+
+/* Stilizare pentru fiecare rând din tabel */
+td {
+    padding: 15px 20px; /* Creștem padding-ul pentru a face celulele mai mari */
+    background-color: rgba(255, 255, 255, 0.6); /* Fundal alb semitransparent */
+    border-radius: 8px; /* Colțuri rotunjite */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Umbra subtile pentru celule */
+    font-size: 18px; /* Mărim fontul pentru a face textul mai ușor de citit */
+}
+
+/* Stilizare pentru etichetele din tabel */
+td:first-child {
+    font-weight: bold;
+    color: #35424a; /* Culoare gri închis pentru etichete */
+}
+
+/* Stilizare pentru câmpurile de input */
+input[type="text"] {
+    width: 100%;  /* Câmpurile de input să ocupe întreaga lățime a celulei */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd; /* Contur subtire */
+    border-radius: 8px; /* Colțuri rotunjite */
+    font-size: 16px;
+    background-color: #f7f7f7; /* Fundal deschis pentru input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Tranziție la hover */
+}
+
+/* Efect la hover pe câmpurile de input */
+input[type="text"]:hover {
+    border-color: #ff9b9b; /* Culoare roz deschis la hover */
+    box-shadow: 0px 4px 8px rgba(255, 155, 155, 0.6); /* Adăugăm umbra pentru un efect de "ridicare" */
+}
+
+/* Efect la focus pe câmpurile de input */
+input[type="text"]:focus {
+    border-color: #ff9b9b; /* Culoare roz deschis la focus */
+    outline: none;  /* Eliminăm conturul standard */
+    box-shadow: 0px 0px 8px rgba(255, 155, 155, 0.8); /* Umbra se întărește la focus */
+}
+
+/* Stilizare pentru butonul de submit */
+input[type="submit"] {
+    background-color: #ff9b9b;  /* Fundal roz pentru buton */
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px; /* Colțuri rotunjite */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Efect de hover pentru buton */
+input[type="submit"]:hover {
+    background-color: #f06292; /* Schimbă culoarea la hover */
+    transform: scale(1.05); /* Mărirea butonului */
+}
+
+/* Stilizare pentru linkuri */
+a {
+    color: #35424a; /* Culoare gri închis */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Stilizare pentru linkurile de adăugare */
+a {
+    color: #35424a;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Efect de hover pentru linkuri */
+a:hover {
+    color: #e94e77; /* Culoare mai deschisă la hover */
+}
+
+/* Centrul formularului și al titlului */
+p, .center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Stilizare pentru mesaje */
+p {
+    font-size: 18px;
+    color: #28a745;  /* Verde pentru mesajul de succes */
+}

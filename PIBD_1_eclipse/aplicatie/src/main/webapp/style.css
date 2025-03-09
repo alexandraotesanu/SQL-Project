@@ -1,0 +1,70 @@
+/* Stil pentru body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.aca7d0e90c2493c7df84e1a35ef329d2?rik=q8h24mvNWWNq%2bA&riu=http%3a%2f%2fxavier-solutions.com%2fwp-content%2fuploads%2f2013%2f12%2fhon240_photo_please-rate-our-service_report.jpg&ehk=NhfdR%2fIcnjwUyov3Vpt3kPQrGntfNhzh3WTqynFI0gc%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover; /* Acoperă întreaga fereastră */
+    background-position: center; /* Centrează imaginea */
+    background-repeat: no-repeat; /* Evită repetarea imaginii */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stil pentru titluri */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Stil pentru titlurile h2 */
+h2 {
+    font-family: 'Dancing Script', cursive;  /* Font ondulat */
+    font-size: 32px;                        /* Dimensiune mai mare pentru titluri */
+    text-align: center;                     /* Centrare text */
+    color: #5e5c5b;                         /* Culoare gri închis */
+    margin-top: 30px;                       /* Margine de sus */
+    text-transform: uppercase;              /* Scriere cu litere mari */
+    font-weight: 700;                       /* Font îngroșat pentru mai mult impact */
+}
+
+/* Stilizare pentru linkuri */
+a {
+    text-decoration: none;    /* Îndepărtează sublinierea de pe linkuri */
+    color: #5e5c5b;           /* Culoare gri închis pentru linkuri */
+}
+
+a:hover {
+    color: #FFD700;           /* Culoare aurie la hover */
+}
+
+/* Stil pentru linkuri care sunt butoane */
+a {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(145deg, #9b4d96, #d18ff7); /* Gradient mov deschis */
+    border-radius: 25px; /* Butoane ovale */
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease; /* Efecte de tranziție pentru hover */
+}
+
+/* Efect de hover pentru butoane */
+a:hover {
+    background: linear-gradient(145deg, #d18ff7, #9b4d96); /* Inversarea gradientului */
+    transform: scale(1.1); /* Mărirea butonului */
+}
+
+/* Stil pentru listele de butoane */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    padding-left: 20px;  /* Adăugăm un spațiu între marginea stângă și lista de butoane */
+}
+
+/* Separare între fiecare secțiune */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}

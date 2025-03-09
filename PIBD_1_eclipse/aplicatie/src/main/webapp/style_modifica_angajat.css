@@ -1,0 +1,65 @@
+/* Fundal negru pentru întreaga pagină */
+body {
+    background-color: #000000;  /* Fundal negru pentru întreaga pagină */
+    color: white;                /* Textul va fi alb pentru contrast */
+    margin: 0;                   /* Elimină marginile implicite ale paginii */
+    font-family: Arial, sans-serif;  /* Setează fontul */
+}
+
+/* Stilizare pentru tabel */
+table {
+    width: 90%;                  /* Lățimea tabelului ocupă 90% din ecran */
+    margin-top: 20px;
+    margin-bottom: 40px;         /* Distanță mai mare la fund */
+    margin-left: auto;           /* Centrarea tabelului pe orizontală */
+    margin-right: auto;
+    border-spacing: 15px;        /* Spațiu între celule */
+    text-align: left;
+    background-color: white;    /* Fundal alb pentru tabel */
+    border-radius: 15px;         /* Colțuri rotunjite pentru tabel */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Umbra mai puternică pentru tabel */
+    padding: 20px;               /* Padding pentru tabel, pentru a-l face mai aerisit */
+}
+
+/* Stilizare pentru fiecare rând din tabel */
+td {
+    padding: 15px 20px;          /* Margine în jurul textului pentru a oferi mai mult spațiu */
+    background-color: rgba(255, 255, 255, 0.6); /* Fundal alb semitransparent pentru celule */
+    border-radius: 8px;          /* Colțuri rotunjite pentru celule */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Umbră subtilă pentru celule */
+    font-size: 16px;
+    color: #ff66b2;              /* Text roz pentru celule */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Tranziții pentru hover */
+}
+
+/* Efect la hover pe câmpurile de input */
+td:hover {
+    background-color: rgba(255, 255, 255, 1);  /* Luminarea celulei la hover */
+    transform: scale(1.05);                    /* Mărirea celulei la hover */
+}
+
+/* Stilizare pentru etichetele din tabel (primele celule) */
+td:first-child {
+    font-weight: bold;
+    color: #ff66b2;  /* Text roz pentru etichetele din tabel */
+}
+
+/* Stilizare pentru butonul de submit */
+input[type="submit"] {
+    background-color: #ff9b9b;  /* Fundal roz pentru buton */
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px; /* Colțuri rotunjite */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Efect de hover pentru buton */
+input[type="submit"]:hover {
+    background-color: #f06292; /* Schimbă culoarea la hover */
+    transform: scale(1.05);     /* Mărirea butonului */
+}

@@ -1,0 +1,188 @@
+/* Stilizare pentru body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+    /* Adăugăm două imagini de fundal */
+    background-image: 
+        url('https://www.absolutoffice.ro/wp-content/uploads/2021/09/strategii-de-motivare-a-angajatilor-scaled.jpg'); 
+    background-size: cover; /* Asigură-te că imaginea acoperă întreaga fereastră */
+    background-position: center; /* Centrează imaginea */
+    background-repeat: no-repeat; /* Nu repeta imaginea */
+}
+
+/* Stilizare pentru header */
+h1 {
+    background-color: #ffffff;  /* Fundal roz deschis */
+    color: #ff80c0;             /* Culoare text (gri închis) */
+    font-family: 'Arial', sans-serif; /* Font simplu pentru titluri */
+    padding: 20px;              /* Spațiu în jurul textului */
+    border-radius: 10px;        /* Colțuri rotunjite */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Umbra subtire pentru a adăuga profunzime */
+    text-align: center;         /* Centrarea textului */
+    font-size: 28px;            /* Dimensiune font pentru titlu */
+    margin: 20px 0;             /* Spațiu deasupra și dedesubt */
+    text-transform: uppercase;  /* Transforma textul în litere mari */
+    font-weight: 700;           /* Font îngroșat pentru mai mult impact */
+    letter-spacing: 2px;        /* Crește distanța între litere */
+}
+
+/* Stilizare pentru tabel */
+table {
+    width: 90%; /* Folosim o lățime de 90% din lățimea ecranului */
+    margin: 20px auto;
+    border-collapse: collapse; /* Elimină liniile tabelului */
+    table-layout: fixed; /* Asigură o lățime uniformă pentru coloane */
+}
+
+/* Stil pentru celule */
+td, th {
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px; /* Colțuri rotunjite pentru fiecare celulă */
+    background-color: rgba(255, 255, 255, 0.7); /* Fundal semitransparent pentru celule */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecte de tranziție */
+    overflow-wrap: break-word; /* Evită ca textul să iasă din celulă */
+}
+
+/* Elimină bordura tabelului */
+table, td, th {
+    border: none;
+}
+
+/* Efect de hover pentru celule */
+td:hover, th:hover {
+    background-color: rgba(255, 255, 255, 1); /* Luminarea celulei la hover */
+    transform: scale(1.05); /* Mărirea celulei la hover */
+}
+
+/* Stil pentru antetul tabelului */
+th {
+    background-color: #35424a; /* Culoare mai închisă pentru antet */
+    color: white;
+    font-weight: bold; /* Text îngroșat */
+}
+
+/* Stilizare pentru checkbox */
+input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.2); /* Mărire checkbox */
+}
+
+/* Stil pentru butonul de submit */
+input[type="submit"] {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px; /* Colțuri rotunjite pentru buton */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efect de hover pentru buton */
+input[type="submit"]:hover {
+    background-color: #e94e77; /* Culoare mai deschisă la hover */
+}
+
+/* Stilizare pentru linkurile de adăugare */
+a {
+    color: #35424a;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Efect de hover pentru linkuri */
+a:hover {
+    color: #e94e77; /* Culoare mai deschisă la hover */
+}
+
+/* Media Queries pentru ecrane mici */
+@media screen and (max-width: 768px) {
+    /* Ajustăm tabelul pentru ecrane mici */
+    table {
+        width: 100%; /* Tabelul va ocupa 100% din lățimea ecranului */
+    }
+    
+    td, th {
+        padding: 10px; /* Micșorăm puțin padding-ul pentru a face elementele mai compacte */
+        font-size: 14px; /* Micșorăm fontul pentru a încăpea mai multe informații */
+    }
+    
+    /* Asigurăm că textul nu iese din celule */
+    td {
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustăm și mai mult pentru ecrane foarte mici */
+    td, th {
+        padding: 8px; /* Mai puțin padding pe ecrane foarte mici */
+        font-size: 12px; /* Mai mic font pentru a acomoda datele */
+    }
+    
+    h1 {
+        font-size: 18px; /* Micșorăm și dimensiunea titlului pentru ecrane mici */
+    }
+}
+
+
+/* Stilizare pentru butonul de submit */
+input[type="submit"] {
+    background-color: #35424a; /* Culoare de fundal gri închis */
+    color: white; /* Text alb */
+    border: none; /* Fără bordură */
+    padding: 15px 30px; /* Padding generos pentru un buton mai mare */
+    border-radius: 30px; /* Colțuri rotunjite pentru buton */
+    font-size: 18px; /* Dimensiune font corespunzătoare */
+    font-weight: bold; /* Font îngroșat */
+    cursor: pointer; /* Cursor de tip mână la hover */
+    transition: all 0.3s ease; /* Efect de tranziție pentru toate proprietățile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră subtilă pentru adâncire */
+}
+
+/* Efect de hover pentru buton */
+input[type="submit"]:hover {
+    background-color: #e94e77; /* Culoare mai deschisă la hover */
+    transform: translateY(-3px); /* Mărirea butonului și mișcarea în sus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Umbra devine mai puternică */
+}
+
+/* Efect de focus pentru buton (când este selectat) */
+input[type="submit"]:focus {
+    outline: none; /* Eliminăm conturul implicit al butonului */
+    box-shadow: 0 0 0 4px rgba(233, 78, 119, 0.4); /* Contur roz când butonul este selectat */
+}
+
+
+/* Stilizare pentru linkul "Home" */
+a {
+    color: #8000ff; /* Culoare gri închis pentru text */
+    text-decoration: none; /* Elimină sublinierea implicită */
+    font-size: 18px; /* Dimensiune text medie */
+    font-weight: bold; /* Font îngroșat pentru mai mult impact */
+    text-transform: uppercase; /* Scriere cu litere mari */
+    padding: 10px 20px; /* Padding pentru a crea spațiu în jurul textului */
+    border-radius: 25px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    display: inline-block; /* Permite adăugarea de padding și margină */
+    transition: all 0.3s ease; /* Efecte de tranziție pentru toate proprietățile */
+}
+
+/* Efect de hover pentru link */
+a:hover {
+    color: #e94e77; /* Schimbă culoarea la hover pentru un efect vizibil */
+    background-color: rgba(233, 78, 119, 0.1); /* Fundal ușor colorat la hover */
+    transform: translateY(-3px); /* Mărirea ușoară și ridicarea linkului la hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră subtilă */
+}
+
+/* Efect de focus pentru link */
+a:focus {
+    outline: none; /* Elimină conturul implicit */
+    border: 2px solid #e94e77; /* Adaugă o bordură roz atunci când este activ */
+}
